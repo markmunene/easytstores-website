@@ -174,8 +174,8 @@ function App() {
 
   return (
     <div className="cotainer">
-      <div className="hero-section">
         <Navbar scrollDown={scrollDown} scrollDownContact={scrollDownContact} scrollDownFaq={scrollDownFaq}   />
+      <div className="hero-section">
 
         <div className="heroHeader">
           <h1>Easystores <br/> Application</h1>
@@ -209,12 +209,12 @@ function App() {
 
       <div className="about-section">
         <div className="download-btn">
-          <a href='#' className='mr-2 ' role="button" >
-          <img alt='' src={appstore} />
-          </a>
           <a href="#" role="button">
           <img alt='' src={play} />
           
+          </a>
+          <a href='#' className='mr-2 ' role="button" >
+          <img alt='' src={appstore} />
           </a>
 
         </div>
@@ -229,7 +229,7 @@ function App() {
         <div className="aboutSectionContent" id='aboutSectionContent' ref={aboutRef}>  
         <div className="col-md-6 photoContainer">
           
-        
+        <span><strong>Updating stock screen</strong></span>
               <img src={pic2} alt="" className=' about-photo'  />
           <div className="rectangle-color">
 
@@ -258,7 +258,8 @@ function App() {
         </div>
        
       </div>
-      <div className=" row aboutSectionContent">     
+      <div className=" row ">   
+       <div className="aboutSectionContent">
         <div className=" col-md-6 " >
           <div className="about-textContent">
 
@@ -266,7 +267,7 @@ function App() {
           <h2 className=''>
             Sales analysis
           </h2>
-          <p className='w-75'>
+          <p className='w-75 classMleft ' >
               Using the selling price and buying price the app calculates the profit for each product sold and the results are recorded for analysis
               with these records can be generated  of each product sold in a particular
               date, month, year , to a certain cutomer etc.
@@ -278,23 +279,22 @@ function App() {
           </div>
         <div className=" col-md-6 photoContainer">
       
+            <span><strong>Sales Analysis Screen</strong></span>
               <img src={pic4} alt="" className='about-photo'  />
           <div className="rectangle-color">
 
-          </div>
             </div>
-       
+            </div>
+            </div>
 
       </div>
       <div className="row">
         <div className="aboutSectionContent">  
           <div className="col-md-6 photoContainer">
 
-        
+          <span><strong>Saving a Sale screen</strong></span>
               <img src={pic5} alt="" className='about-photo'  />
           <div className="rectangle-color">
-
-         
             </div>
           </div>
           <div className="col-md-6">
@@ -324,7 +324,7 @@ function App() {
         <div className="our-clients-header">
           <h1>Our clients</h1>
           <p className='client-text m-2'>
-           We have worked with local shop owners in kenya for over a year 
+           We have worked with local shop owners in kenya for over a year now.
           </p>
         </div>
         <div className="our-clients-content">
@@ -399,7 +399,7 @@ function App() {
               <div className="item-Header">
           
               <button onClick={()=>HandleopenFaq2()} className='faq-open-btn mr-1'><i className={openFaq2 ? 'fa-sharp fa-solid fa-minus' : 'fa-solid fa-plus'} ></i></button>
-            <h3 className='mt-1 text-center'>record expenses, gains outside sales  ?</h3>
+            <h3 className='mt-1 text-center'>Record expenses, gains outside sales  ?</h3>
              </div>
             </div>
             <div className="item-content card-body " ref={faqContentRef2}>
@@ -421,7 +421,7 @@ function App() {
               <p className='mb-4'>
                 Ease your struggle for managing your shop and taking it to the next level in life 
               </p>
-              <div className="download-btns d-flex">
+              <div className="download-btns d-flex ">
                   <a href="#" className=''>
                     <img src={appstore} alt="" />
                 </a>
@@ -441,7 +441,7 @@ function App() {
         </div>
       </div>
       {/* contact us section */}
-      <div className="contact w-75">
+      <div className="contact w-100">
         <div className="contact-header">
           <h1 className='text-center'>Contact us</h1>
         </div>

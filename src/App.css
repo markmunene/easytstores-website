@@ -88,28 +88,36 @@
   text-align: center;
   margin-top: 20px;
 }
+.about-section{
+  margin-top: 60px;
+  height: fit-content !important;
+}
 @media screen and (max-width:601px) {
 
   .heroHeader{
     font-size: 1rem;
   }
   .about-section{
+    margin-top: 120px;
     height: fit-content !important;
   }
+  
   .productImagesContainer img:nth-child(2){
     display: none;
   }
   .productImagesContainer img:nth-child(1){
-    width: 200px;
-    height: 500px;
+    width: 250px;
+    height: 550px;
   }
   .productImagesContainer img:nth-child(3){
     display: none;
   }
   .hero-section{
     height: fit-content !important;
-    width: 80% !important;
+    width: fit-content !important;
     margin-bottom: 30px !important;
+    display: grid;
+    place-items: center;
   }
   .contact{
     margin-left: 20px !important;
@@ -128,16 +136,18 @@
   justify-content: center;
   align-items: center;
  
-    height: 50vh;
+    height: 60vh;
     /* width: 80vw; */
-  margin-top: 70px;
+    width: 95vw;
+  margin-top: 100px;
 
   
   
 }
 .productImagesContainer img{
   width: 300px;
-  height: 800px;
+  height: 650px;
+  margin-right: 20px;
   object-fit: cover; 
 }
 
@@ -148,16 +158,17 @@
 }
 .download-btn img{
   width: 150px;
-  height: 70px;
+  height: 50px;
   object-fit: cover;
   border-radius: 20px;
 
 }
 .download-btns img {
   width: 150px;
-  height: 70px ;
+  height: 50px ;
   border-radius: 20px;
   object-fit: cover;
+  margin-left: 10px;
 }
 
 
@@ -183,11 +194,11 @@ place-items: center;
 
 }
 .about-photo{
-  width:500px ;
-  height: 900px ; 
+  width:300px ;
+  height: 610px ; 
   z-index: 900;
   object-fit: cover;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9 !important;
 }
 .rectangle-color{
   background-color: #ffbb00;
@@ -200,6 +211,9 @@ place-items: center;
   z-index: 0;
 
 }
+.classMleft {
+  margin-left: 80px;
+}
 .about-textContent{
   display: grid;
 place-items: center;
@@ -208,7 +222,7 @@ flex: 1;
 }
 .aboutSectionContent{
   width: 80vw;
-  
+  height: fit-content !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,10 +251,17 @@ flex: 1;
 }
 
 @media screen and (max-width :601px) {
+  .photoContainer{
+    width: 250px;
+    height: 550px;
+    margin-bottom: 20px;
+  }
   .about-photo{
-    width: 200px !important;
-    height: 600px !important;
-    object-fit: cover;
+    width: 250px !important;
+    height: 550px !important;
+    object-fit: contain;
+    
+    
     z-index: 900;
 
   }
@@ -259,6 +280,9 @@ flex: 1;
     display: grid !important;
     place-items: center !important;
     margin-left: 20px !important;
+  }
+  .classMleft{
+    margin-left: 10px;
   }
   .about-textContent h2{
     font-weight: 800;
@@ -380,6 +404,9 @@ font-weight: 600;
   font-weight: 800;
 
 }
+.contact{
+  margin-right: 10px !important;
+}
 
 
   
@@ -480,21 +507,21 @@ font-weight: 600;
   display: none;
 }
 .download-photo-container{
-  width: 500px;
-  height: 620px;
-  transition: ease-in-out 8s;
+  width: 350px;
+  height: 650px;
+  transition: ease-in-out 2s;
   overflow: hidden;
 
 
 }
 .download-photo-container img{
 
-  width: 500px;
-  height: 700px;
+  width: 300px;
+  height: 620px;
   object-fit: cover;
 }
 .download-photo-container img:hover{
-  transform: scale(1.2);
+  transform: scale(1.05);
 
 }
 .download-text-content{
@@ -509,6 +536,10 @@ font-weight: 600;
 .contact {
   padding-bottom: 130px;
   margin-top: 40px;
+  display: grid;
+ place-items: center;
+ width: 90vw !important;
+ height: fit-content;
 }
 .contact-header{
  height: 20vh;
